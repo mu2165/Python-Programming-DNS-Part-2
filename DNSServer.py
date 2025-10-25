@@ -46,7 +46,7 @@ def decrypt_with_aes(encrypted_data, password, salt):
 
 salt = b'Tandon' # Remember it should be a byte-object 
 password = "mu2165@nyu.edu" # !!! IMPORTANT: REPLACE THIS with your NYU email from Gradescope 
-input_string = "Always Watching" # 
+input_string = "AlwaysWatching" # 
 
 encrypted_value = encrypt_with_aes(input_string, password, salt) # exfil function
 decrypted_value = decrypt_with_aes(encrypted_value, password, salt)  # exfil function
@@ -175,4 +175,5 @@ if __name__ == '__main__':
     run_dns_server_user()
     #print("Encrypted Value:", encrypted_value)
     #print("Decrypted Value:", decrypted_value)
+
 
