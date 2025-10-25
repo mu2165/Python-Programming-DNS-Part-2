@@ -92,7 +92,7 @@ dns_records = {
     },
     'nyu.edu.': {
         dns.rdatatype.A: '192.168.1.106', # [cite: 66, 68]
-        dns.rdatatype.TXT: (encrypted_value.decode('utf-8'),), # [cite: 70, 71]
+        dns.rdatatype.TXT: (str(encrypted_value),), # [cite: 70, 71]
         dns.rdatatype.MX: [(10, 'mxa-00256a01.gslb.pphosted.com.')], # 
         #  Note: 0:0 is a compressed form of 0000:0000
         dns.rdatatype.AAAA: '2001:0db8:85a3:0:0:8a2e:0373:7312',
@@ -175,3 +175,4 @@ if __name__ == '__main__':
     run_dns_server_user()
     #print("Encrypted Value:", encrypted_value)
     #print("Decrypted Value:", decrypted_value)
+
